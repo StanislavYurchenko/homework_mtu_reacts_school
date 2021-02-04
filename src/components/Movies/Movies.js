@@ -1,10 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import styles from './Movies.module.css';
 
 import { BASE_URL_POSTER } from '../../services/themoviedbApi';
 
 function Movies({ movies }) {
-  console.log(movies);
   const location = useLocation();
   return (
     <ul className={styles.list}>
@@ -32,5 +32,15 @@ function Movies({ movies }) {
     </ul>
   );
 }
+
+Movies.propTypes = {
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      genre_ids: PropTypes.arrayOf(PropTypes.number),
+    }),
+  ),
+};
 
 export default Movies;
