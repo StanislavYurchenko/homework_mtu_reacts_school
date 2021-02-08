@@ -2,12 +2,12 @@ import React from 'react';
 
 import SayHello from './SayHello';
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
-  title: 'Example/SayHello',
+const Stories = {
+  title: 'Task1/SayHello',
   component: SayHello,
   decorators: [],
 };
+export default Stories;
 
 const Template = args => <SayHello {...args} />;
 

@@ -42,12 +42,14 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.1.16",
+    "@storybook/addon-actions": "^6.1.17",
+    "@storybook/addon-console": "^1.2.2",
     "@storybook/addon-essentials": "^6.1.16",
     "@storybook/addon-links": "^6.1.16",
     "@storybook/node-logger": "^6.1.16",
     "@storybook/preset-create-react-app": "^3.1.5",
     "@storybook/react": "^6.1.16",
-    "storybook-addon-jsx": "^7.3.4"
+    "storybook-addon-jsx": "^7.3.4",
+    "storybook-react-router": "^1.0.8"
   }
 }

@@ -1,26 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
 import Movies from './Movies';
 
 import * as Api from '../../services/themoviedbApi';
 
-// DECORATOR
-const decorator = Story => {
-  return (
-    <BrowserRouter>
-      <Route path="/">
-        <Story />
-      </Route>
-    </BrowserRouter>
-  );
-};
-
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
-  title: 'Example/Movies',
+const Stories = {
+  title: 'Task1/Movies',
   component: Movies,
-  decorators: [decorator],
 };
+export default Stories;
 
 export const Main = (args, { loaded: { movies } }) => (
   <Movies {...args} movies={movies} />
